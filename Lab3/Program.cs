@@ -7,7 +7,7 @@ namespace Lab3
     {
         static void Main(string[] args)
         {
-            var fs = new FileStream(@"C:\Users\KristianGolba\Pictures\Saved Pictures\sample_1280×853.bmp", FileMode.Open);
+            var fs = new FileStream(@"C:\Users\KristianGolba\source\repos\Lab3\sample_1280×853.bmp", FileMode.Open);
             var fileSize = (int)fs.Length;
             var data = new byte[fileSize];
             fs.Read(data, 0, fileSize);
@@ -16,7 +16,7 @@ namespace Lab3
             var pngChecker = PNGChecker(data) ? "This is a PNG File!" : "This is not PNG File!";
             var bmpChecker = BMPChecker(data) ? "This is a BMP File!" : "This is not BMP File!";
 
-            Console.Write(pngChecker);
+            Console.WriteLine(pngChecker);
             Console.Write(bmpChecker);
 
 
