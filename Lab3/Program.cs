@@ -7,13 +7,19 @@ namespace Lab3
     {
         static void Main(string[] args)
         {
-            var fs = new FileStream(@"C:\Users\KristianGolba\Pictures\Saved Pictures\bWyA9.png", FileMode.Open);
+            var fs = new FileStream(@"C:\Users\KristianGolba\Pictures\Saved Pictures\sample_1280×853.bmp", FileMode.Open);
             var fileSize = (int)fs.Length;
             var data = new byte[fileSize];
             fs.Read(data, 0, fileSize);
             fs.Close();
 
-            PNGChecker(data);
+            var pngChecker = PNGChecker(data) ? "This is a PNG File!" : "This is not PNG File!";
+            var bmpChecker = BMPChecker(data) ? "This is a BMP File!" : "This is not BMP File!";
+
+            Console.Write(pngChecker);
+            Console.Write(bmpChecker);
+
+
         }
 
         static bool PNGChecker(byte[] data)
@@ -22,12 +28,28 @@ namespace Lab3
 
             for (int i = 0; i < 8; i++)
             {
-                if (data[i] == pngFile.Length)
+                if (data[i] != pngFile[i])
                 {
-                    Console.WriteLine("This is a PNG file");
+                    return false;
                 }
             }
             return true;
         }
+
+        static bool BMPChecker(byte[] data)
+        {
+            var bmpFile = new byte[] { 0x42, 0x4D };
+
+            for (int i = 0; i < 2; i++)
+            {
+                if (data[i] != bmpFile[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        
     }
 }
