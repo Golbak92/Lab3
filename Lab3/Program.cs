@@ -38,7 +38,7 @@ namespace Lab3
                 }
                 catch (FileNotFoundException)
                 {
-                    Console.WriteLine("File not found!");
+                    Console.WriteLine("File was not found!");
                 }
             }
         }
