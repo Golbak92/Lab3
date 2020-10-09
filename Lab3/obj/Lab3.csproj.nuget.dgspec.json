@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KristianGolba\\source\\repos\\Lab3\\Lab3\\Lab3.csproj": {}
+    "C:\\Users\\Golba\\source\\repos\\Golbak92\\Lab3\\Lab3\\Lab3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KristianGolba\\source\\repos\\Lab3\\Lab3\\Lab3.csproj": {
+    "C:\\Users\\Golba\\source\\repos\\Golbak92\\Lab3\\Lab3\\Lab3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KristianGolba\\source\\repos\\Lab3\\Lab3\\Lab3.csproj",
+        "projectUniqueName": "C:\\Users\\Golba\\source\\repos\\Golbak92\\Lab3\\Lab3\\Lab3.csproj",
         "projectName": "Lab3",
-        "projectPath": "C:\\Users\\KristianGolba\\source\\repos\\Lab3\\Lab3\\Lab3.csproj",
-        "packagesPath": "C:\\Users\\KristianGolba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KristianGolba\\source\\repos\\Lab3\\Lab3\\obj\\",
+        "projectPath": "C:\\Users\\Golba\\source\\repos\\Golbak92\\Lab3\\Lab3\\Lab3.csproj",
+        "packagesPath": "C:\\Users\\Golba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Golba\\source\\repos\\Golbak92\\Lab3\\Lab3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KristianGolba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Golba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
